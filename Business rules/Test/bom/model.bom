@@ -1,0 +1,41 @@
+
+package amore.ankur_training.business_rules.test;
+
+
+class ABC
+        property ads.typeId "1"
+        property com.fasterxml.jackson.annotation.JsonTypeName "ABC"
+        #de.generated
+{
+    string bank
+                property ads.attributeId "2"
+                property com.fasterxml.jackson.annotation.JsonProperty "Bank"
+                #update;
+    double money
+                property ads.attributeId "1"
+                property com.fasterxml.jackson.annotation.JsonProperty "Money"
+                #update;
+    ABC(string bank, double money)
+                #autoExpand
+                #beanConstructor
+                property groups "BALA"
+                #prototype;
+    ABC()
+                #dataio.default;
+}
+
+class NewEnum
+        extends java.lang.Enum
+        property ads.typeId "2"
+        property com.fasterxml.jackson.annotation.JsonTypeName "newEnum"
+        #de.generated
+{
+    domain {static account, static saving}
+    static final readonly amore.ankur_training.business_rules.test.NewEnum account
+                property ads.attributeId "1"
+                property com.fasterxml.jackson.annotation.JsonProperty "account";
+    static final readonly amore.ankur_training.business_rules.test.NewEnum saving
+                property ads.attributeId "2"
+                property com.fasterxml.jackson.annotation.JsonProperty "saving";
+}
+

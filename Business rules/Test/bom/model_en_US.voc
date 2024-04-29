@@ -1,0 +1,15 @@
+
+# amore.ankur_training.business_rules.test.ABC
+amore.ankur_training.business_rules.test.ABC#concept.label = ABC
+amore.ankur_training.business_rules.test.ABC.ABC(java.lang.String,double)#phrase.navigation = a new {ABC} where {0, Bank} {1, Money}
+amore.ankur_training.business_rules.test.ABC.bank#phrase.action = set the Bank of {this} to {Bank}
+amore.ankur_training.business_rules.test.ABC.bank#phrase.navigation = {Bank} of {this}
+amore.ankur_training.business_rules.test.ABC.money#phrase.action = set the Money of {this} to {Money}
+amore.ankur_training.business_rules.test.ABC.money#phrase.addition_setter = add {Money} to the Money of {this}
+amore.ankur_training.business_rules.test.ABC.money#phrase.navigation = {Money} of {this}
+amore.ankur_training.business_rules.test.ABC.money#phrase.subtraction_setter = subtract {Money} from the Money of {this}
+
+# amore.ankur_training.business_rules.test.NewEnum
+amore.ankur_training.business_rules.test.NewEnum#concept.label = new enum
+amore.ankur_training.business_rules.test.NewEnum.account#instance.label = account
+amore.ankur_training.business_rules.test.NewEnum.saving#instance.label = saving
